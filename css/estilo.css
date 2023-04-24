@@ -3,101 +3,865 @@
   padding: 0%;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #f2f2f2;
 }
-.center {
+.bg-faq {
   background-color: #2b2b29;
-  padding-top: 3rem;
+}
+/* MENU */
+
+.logo1 {
+  position: absolute;
+  padding-top: 6rem;
+  z-index: 1;
+}
+.logo1 img {
+  width: 12rem;
+}
+.logo2 {
+  margin-left: 11rem;
+  padding-top: 1rem;
+}
+.nav-link {
+  color: white;
+}
+.contacto {
+  color: #ffbb10;
+}
+
+.navbar-nav{
+  --bs-nav-link-disabled-color:white;
+
+}
+
+
+
+/* HEADER */
+
+.contenido_slider_home{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: flex-end;
+
+}
+.titulo_silder_home{
+  width: 40rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.titulo_silder_home h2 {
+  font-size: 2.3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.whats {
+  width: 10%;
+}
+
+.consulta{
+  background-color: #f2f2f2;
+  width: 26rem;
+  margin-right: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
+}
+
+.boton_consulta{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+}
+.tel{
+  color: #3fd4d5;
+}
+.boton_consulta p{
+  font-weight: 600;
+  color: black;
+  margin-top: 0.7rem;
+}
+.carousel-indicators{
+  bottom: 2rem;
+}
+.carousel-indicators [data-bs-target]{
+  background-clip:border-box;
+  border-radius: 1rem;
+  background-color: #FFBB10;
+  width: 1rem;
+  height: 0.3rem;
+  border-top: 2px solid transparent;
+
+}
+/* EMPRESA */
+
+.empresa{
+  margin-top: 0.5rem;
+}
+.empresa_imagen{
+  background-image: url(../multimedia/EncabezadoResposive2.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.empresa_contenido{
+  margin-top: 2rem;
+}
+
+.empresa_contenido img{
+  margin-left: 3rem;
+  width: 10rem;
+  background-color: #2b2b29;
+  padding: 0.4rem;
+}
+
+.empresa_textos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-left: 8rem;
+  padding-right: 10rem;
+}
+
+.empresa_contactanos{
+  background-color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  padding-bottom: 0rem;
+  margin-bottom: 3rem;
+
+}
+
+/* VENTAJAS */
+
+.ventajas{
+  padding-top: 5rem;
+  background-color: white;
+  padding-bottom: 5rem;
+}
+.titulo_ventajas{
+  text-align: center;
+}
+.titulo_ventajas h2{
+  font-weight:600;
+}
+.titulo_ventajas h2 span{
+  color: #FFBB10;
+}
+
+.ventajas_circulos{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.drywall{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem;
+  height: auto;
+  background-color: #FFB000;
+  border-radius: 100%;
+  padding: 1rem;
+  margin: 1rem;
+
+}
+.drywall p{
+  color: white;
+  font-size: 2rem;
+  text-align: center;  
+}
+.perfiles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem;
+  height: auto;
+  background-color: #B9DD22;
+  border-radius: 100%;
+  padding: 1.5rem;
+  margin: 1rem;
+
+}
+.perfiles p{
+  color: white;
+  font-size: 2rem;
+  text-align: center; 
+  margin-bottom: 0rem;
+
+}
+.reduccion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem;
+  height: auto;
+  background-color: #3FD4D5;
+  border-radius: 100%;
+  padding: 1rem;
+  margin: 1rem;
+
+
+}
+.reduccion p{
+  margin-bottom: 0rem;
+  color: white;
+  font-size: 2rem;
+  text-align: center; 
+}
+
+.txt_reduccion{
+  padding-bottom: 5rem;
+}
+
+.titulo_circulos p{
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0rem;
+}
+
+
+/* SERVICIOS */
+.servicios{
+  margin-top: 2rem;
+}
+.servicios h2{
+  color: #FFBB10;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.card-img-top{
+  width: 60%;
+}
+
+.card{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  background-color: #4D4D4D;
+  width: 24.5%;
 }
-.center h2 {
-  color: #ffbb10;
+.card-img-top{
   margin-top: 1rem;
+}
+.card-text{
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* PRODUCTOS */
+.productos{
+  background-color: white;
+}
+.productos h2{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+.img_productos_uno {
+  display: flex;
+}
+.img_productos_uno img{
+  padding: 0.3rem;
+}
+
+.img_productos_dos {
+  display: flex;
+}
+.img_productos_dos img{
+  padding: 0.3rem;
+}
+
+.img_productos_tres {
+  display: flex;
+}
+.img_productos_tres img{
+  padding: 0.3rem;
+}
+
+/* TABLA */
+.espacio_tabla_desktop{
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.tabla{
+  background-color: #DDDBDB;
+  margin-left: 0.3rem;
+  padding: 1rem 0.7rem;
+}
+
+
+thead{
+  background-color: #FFBB10;
+}
+.cabecera{
+  border-left: 4px solid white;
   text-align: center;
 }
-.logo {
-  width: 30%;
+.borde_izq{
+  border-left: 4px solid white;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+
 }
-.underconstruccion {
-  width: 25%;
+.tabla_desktop td{
+  color: #4A4A4C;
+  font-weight: 700;
 }
-.contacto {
-  background-color: #f2f2f2;
+.tabla_desktop td, table th{
+  padding: 1rem 2rem;
+}
+
+.tabla_body_desktop tr:nth-child(odd) {
+  background-color: #DDDBDB;
+}
+
+.tabla_body_desktop tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+.tabla_body_desktop tr{
+  font-size: 1.2rem;
+}
+.tabla_body_desktop td{
+    padding: 0.5rem 0.5rem;
+}
+
+.texto_tabla{
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto_tabla h4{
+  margin-top: 4rem;
+}
+.texto_tabla h4 span{
+  color: #FFBB10;
+}
+
+.general_tabla {
+  color: #4A4A4C;
+  font-weight: 600;
+}
+
+.general_tabla p span{
+  color: #FFBB10;
+}
+
+/* SLIDER PRODUCCION */
+
+.titulo_produccion h2{
+  font-weight: bold;
+}
+.carousel-item{
+  transition: transform .4s ease-in-out;
+}
+.carousel-control-prev-icon{
+  background-image: url(../multimedia/simbolo_prev.png);
+  height: 5rem;
+  width: 5rem;
+}
+
+.carousel-control-next-icon{
+  background-image: url(../multimedia/simbolo_next.png);
+  height: 5rem;
+  width: 5rem;
+}
+
+
+/* Contacto */
+form{
+  margin-left: 5rem;
+}
+.contacto_footer{
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #2b2b29;
+  background-color: #4D4D4D;
+  --bs-gutter-x: 0rem;
+  position: relative;
+
 }
-.llamanos {
-  text-align: center;
-  padding: 0.5rem;
-  background-color: #2b2b29;
-  color: #ffbb10;
+
+input{
+  border-radius: 2rem;
+  width: 20rem;
+  height: 2.5rem;
+  background-color: #F2F2F2;
+  margin-bottom: 0.5rem;
 }
-.llamanos h3 {
-  font-size: 2rem;
+
+input {
+  padding-left: 1rem;
 }
-.tel img {
-  width: 3rem;
-  margin-right: 1rem;
+
+textarea{
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  background-color: #F2F2F2;
 }
-.tel {
-  color: #2b2b29;
+
+.enviar button{
+  background-color: #FFBB10;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+.whats_contacto{
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.6rem;
+}
+.consulta_contacto{
+  background-color: #000000;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.boton_consulta_contacto{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  border-top: 2px solid #2b2b29;
-  border-bottom: 2px solid #2b2b29;
-  border-right: 2px solid #2b2b29;
-  border-left: 2px solid #2b2b29;
-}
-
-.escribinos {
-  text-align: center;
-  padding: 0.5rem;
-  background-color: #2b2b29;
-  color: #ffbb10;
-}
-.escribinos h3 {
-  padding: 0.1rem;
-  font-size: 2rem;
-}
-
-.correo {
-  padding: 1.26rem;
-  display: flex;
-  justify-content: center;
-  border-top: 2px solid #2b2b29;
-  border-bottom: 2px solid #2b2b29;
-  border-right: 2px solid #2b2b29;
-  border-left: 2px solid #2b2b29;
-}
-
-.mail {
+  justify-content: space-around;
   text-decoration: none;
-  color: #2b2b29;
-}
-.mail:hover {
-  color: #ffbb10;
-  background-color: #f2f2f2;
+  color: white;
 }
 
-@media (max-width: 576px) {
-  .logo {
-    width: 65%;
-  }
-  .underconstruccion {
-    width: 40%;
-  }
-  .escribinos h3 {
-    font-size: 1.5rem;
-  }
-  .llamanos h3 {
-    font-size: 1.5rem;
-  }
+.boton_consulta_contacto p{
+  font-weight: 300;
+  color: white;
+  margin-top: 0.8rem;
 }
+
+
+  .datos_contacto {
+    width: 20rem;
+    height: 25rem;
+    bottom: 4rem;
+    position: absolute;
+    right: 35rem;
+    background-color: #4d4d4dc7;
+    padding: 20px;
+    z-index: 1;
+  }
+.datos_contacto h3{
+  color: #FFBB10
+}
+.datos_contacto p{
+  margin-top: 2rem;
+  color: white
+}
+.redes{
+  width: 12rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bi-instagram{
+  color: white;
+  font-size: 30px;
+
+}
+.bi-facebook{
+  color: white;
+  font-size: 30px;
+  
+}
+
+
+
+
+@media all and (min-width: 769px){
+  
+
+  /* SLIDER PRODUCCION */
+
+  .slider_mobile{
+    display: none;
+  }
+
+  .productos_mobile{
+    display: none;
+  }
+
+  .espacio_tabla_mobile{
+    display: none;
+  }
+
+}
+
+
+@media all and (max-width: 768px){
+
+  /* MENU */
+  .logo1{
+    display: none;
+  }
+
+  .logo2 {
+    margin-left: 2rem;
+    padding-top: 1rem;
+  }
+  .navbar-toggler{
+    color: #FFB000;
+    background-color: white;
+  }
+
+  /* CAROUSEL HEADER */
+  .titulo_silder_home{
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+  .titulo_silder_home h2{
+    font-size: 1rem;
+  }
+
+  .carousel-indicators{
+    bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 0.5rem;
+    height: 0.1rem;
+    border-bottom: 0.3rem solid transparent
+  }
+
+  .consulta{
+    margin-right: 3rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .boton_consulta p{
+    font-size: 0.5rem;
+    margin: 0.6rem;
+  }
+  /* EMPRESA */
+
+  .empresa_textos{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  /* VENTAJAS */
+
+  .titulo_ventajas h2{
+    font-size: 2rem;
+  }
+  .drywall{
+    width: 15rem;
+    margin: 0rem;
+  }
+  .drywall p{
+    font-size: 1rem;
+  }
+  .perfiles{
+    width: 15rem;
+    margin: 0rem;
+
+  }
+  .perfiles p{
+    font-size: 1rem;
+  }
+  .reduccion{
+    width: 15rem;
+    margin: 0rem;
+
+  }
+  .reduccion p{
+    font-size: 1rem;
+  }
+
+  .txt_reduccion{
+    padding-bottom: 2.6rem;
+  }
+
+  /* SLIDER PRODUCCION */
+
+  .slider_desktop{display: none;}
+
+  /* PRODUCTOS */
+  .productos_desktop{
+    display: none ;
+  }
+  .espacio_tabla_desktop{
+    display: none;
+  }
+  .espacio_tabla_mobile{
+    background-color: #DDDBDB;
+  }
+
+  .tabla_mobile td, table th{
+    padding: 0.4rem 0.5rem;
+    font-size: 1rem;
+  }
+  .tabla_body_mobile tr{
+    font-size: 1rem;
+  }
+  .tabla_body_mobile td{
+    padding-left: 0.2rem;
+    padding: 0.2rem 0.1rem;
+  }
+  .tabla_body_mobile tr:nth-child(odd) {
+    background-color: #DDDBDB;
+  }
+  
+  .tabla_body_mobile tr:nth-child(even) {
+    background-color: #F2F2F2;
+  }
+  .tabla{
+    margin-left: 0rem;
+  }
+  .tabla_mobile{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .texto_tabla h4{
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .texto_tabla{
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+/* CONTACTO */
+
+
+
+form{
+  margin-left: 0rem;
+}
+.consulta_contacto{
+  margin-top: 1rem;
+
+}
+  .datos_contacto {
+    width: 50rem;
+    height: 12rem;
+    bottom: 31rem;
+    right: 0rem;
+    left: 0rem;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+}
+
+@media all and (max-width: 599px){
+
+  /* MENU */
+  .logo1{
+    display: none;
+  }
+
+  .logo2 {
+    margin-left: 1rem;
+    padding-top: 1rem;
+  }
+  .navbar-toggler{
+    color: #FFB000;
+    background-color: white;
+  }
+
+  /* CAROUSEL HEADER */
+  .titulo_silder_home{
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+  .titulo_silder_home h2{
+    font-size: 0.5rem;
+  }
+
+  .carousel-indicators{
+    bottom: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 0.5rem;
+    height: 0.1rem;
+    border-bottom: 0.3rem solid transparent
+  }
+
+  .consulta{
+    margin-right: 1rem;
+    width: 9rem;
+    margin-bottom: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .boton_consulta p{
+    font-size: 0.3rem;
+    margin: 0.4rem;
+  }
+
+  /* EMPRESA */
+
+  .empresa_textos{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* VENTAJAS */
+
+  .titulo_ventajas h2{
+    font-size: 1.3rem;
+  }
+  .drywall{
+    width: 15rem;
+    margin: 0rem;
+  }
+  .drywall p{
+    font-size: 0.7rem;
+  }
+  .perfiles{
+    width: 15rem;
+    margin: 0rem;
+
+  }
+  .perfiles p{
+    font-size: 0.7rem;
+  }
+  .reduccion{
+    width: 15rem;
+    margin: 0rem;
+
+  }
+  .reduccion p{
+    font-size: 0.7rem;
+  }
+
+  .txt_reduccion{
+    padding-bottom: 1.5rem;
+  }
+  .ventajas_circulos{
+    margin-top: 3rem;
+  }
+  /* SERVICIOS */
+  .card-text{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .card-body{
+    padding: 0.5rem;
+  }
+
+  .card{
+    width: 49.5%;
+    margin-top: 0.1rem;
+  }
+
+  /* Productos */
+  .productos_desktop{
+    display: none ;
+  }
+  .espacio_tabla_desktop{
+    display: none;
+  }
+  .espacio_tabla_mobile{
+    background-color: #DDDBDB;
+  }
+
+  .tabla_mobile td, table th{
+    padding: 0.4rem 0.5rem;
+    font-size: 0.4rem;
+  }
+  .tabla_body_mobile tr{
+    font-size: 0.4rem;
+  }
+  .tabla_body_mobile td{
+    padding-left: 0.2rem;
+    padding: 0.2rem 0.1rem;
+  }
+  .tabla_body_mobile tr:nth-child(odd) {
+    background-color: #DDDBDB;
+  }
+  
+  .tabla_body_mobile tr:nth-child(even) {
+    background-color: #F2F2F2;
+  }
+  .tabla{
+    margin-left: 0rem;
+  }
+  .tabla_mobile{
+  
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    
+  }
+  .texto_tabla h4{
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .texto_tabla{
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+
+
+  /* SLIDER PRODUCCION */
+
+
+
+  .slider_desktop{display: none;}
+
+
+/* CONTACTO */
+
+
+
+  form{
+    margin-left: 0rem;
+  }
+
+    .datos_contacto {
+      width: 40rem;
+      height: 12rem;
+      bottom: 30rem;
+      right: 0rem;
+      left: 0rem;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

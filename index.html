@@ -1,81 +1,529 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <html lang="en">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Document</title>
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
     <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="./multimedia/Recurso 1logo.png"
-      type="image/x-icon"
+    <link rel="shortcut icon" href="./multimedia/Recurso 1logo.png" type="image/x-icon"
     />
     <!-- SEO -->
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!-- boostrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">    
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilo.css" />
+    
   </head>
   <body>
-    <div class="center">
-      <img class="logo" src="./multimedia/Recurso2.png" alt="" />
-      <img
-        class="underconstruccion"
-        src="./multimedia/Under construction-bro.png"
-        alt=""
-      />
-      <h2>Mientras hacemos los ultimos ajustes, Contactanos</h2>
+  <!-- menu -->
+  <nav class="navbar navbar-expand-lg bg-faq" >
+    <div class="container-fluid ">
+        <a class="navbar-brand logo1" href=""><img src="./multimedia/Recurso 1logo.png" alt="" title="" ></a>
+        <a class="navbar-brand logo2" href=""><img src="./multimedia/Recurso2.png" alt="" title="" width="300"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon d-flex"></span>   
+        </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#empresa_menu">Empresa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#ventajas_menu">Ventajas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#servicios_menu">Servicios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#productos_menu">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link contacto" href="#contacto_menu">Contacto</a>
+        </li>
+      </div>
     </div>
-    <div class="container-fluid">
-      <div class="row contacto">
-        <div class="col-md-6">
-          <div class="escribinos">
-            <h3>Escribinos</h3>
-          </div>
-          <div class="correo">
-            <a class="mail" href="mailto:ventasweb@perﬁlartesrl.com.ar"
-              ><h4>ventasweb@perﬁlartesrl.com.ar</h4></a
-            >
+  </nav>
+<!-- CAROUSEL HEADER -->
+<section>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./multimedia/Encabezado01.jpg" class="d-block w-100" data-bs-interval="100000000" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./multimedia/Encabezado02.jpg" class="d-block w-100" data-bs-interval="100000000" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./multimedia/Encabezado03.jpg" class="d-block w-100" data-bs-interval="100000000" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./multimedia/Encabezado04.jpg" class="d-block w-100" data-bs-interval="100000000" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./multimedia/Encabezado05.jpg" class="d-block w-100" data-bs-interval="100000000" alt="...">
+      </div>
+      <div class="card-img-overlay contenido_slider_home">
+        <div class="titulo_silder_home">
+          <h2 class="card-title">FABRICA DE PERFILES GALVANIZADOS PARA CONSTRUCCION EN SECO PARA TABIQUES Y CIELORRASOS. </h2>
+        </div>
+        <div class="consulta">
+          <a href="https://wa.me/5491121549607" target="_blank" class="boton_consulta">
+          <p class="texto_boton_consulta"> <span class="tel"> 11.2154.9607 </span> / REALIZANOS TU CONSULTA</p> 
+          <img class="whats" src="./multimedia/whatsapp.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Seccion EMPRESA -->
+<section id="empresa_menu" class="empresa container-fluid">
+  <div class="row">
+    <div class="col-lg-3 empresa_imagen">
+    </div>
+    <div class="col-lg-9 col-12 col-md-12 empresa_contenido">
+      <img src="./multimedia/Recurso 1.png" class="img-fluid" alt="...">
+      <div class="empresa_textos">
+          <p>Es una metalúrgica dedicada a la <strong>fabricación de perfiles de acero galvanizado conformatos estandar y CORTES A MEDIDA para la Construcción en Seco.</strong> Está formada por un equipo de trabajo con una gran trayectoria, más de 20 años de experiencia anterior sobre Construcción en Seco: desde la comercialización de productos, atención personalizada al cliente y <strong>experiencia directa del trabajo en obra.</strong>
+          </p>
+          <p>Nuestra planta se encuentra en la localidad de Garín, Pvcia. de Bs. As.Contamos con más de 1000 m2 de instalaciones y con las máquinas conformadorasmás modernas del mercado, en nuestra planta se fabrica la <strong>línea completa para Drywall, (Montantes, soleras, Cantoneras, buñas y omegas).
+          </strong> Trabajamos bajo <strong>Norma IRAM-IAS U500-243 y con materias primas normalizadas TERNIUM.</strong> Nuestra oficina técnica y de control de calidad, nos permite obtener un producto confiable y eficiente.</p>
+        <div class="empresa_contactanos">
+          <p>Sumá valor a tu negocio, incorporá productos de calidad con excelentes precios. Aprovechá todos los beneficios, vas a poder potenciar tu local. <strong> Contactanos y formá parte de nuestra red de distribución oficial.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Seccion VENTAJAS -->
+<section id="ventajas_menu" class="ventajas container-fluid">
+    <div class="titulo_ventajas">
+      <h2><span>VENTAJAS</span> OPTIMIZACIÓN DE COSTOS</h2>
+    </div>
+    <div class="ventajas_circulos ">
+      <div class="drywall">
+        <div class="titulo_circulos">
+          <p>El sistema</p><p>drywall</p>
+        </div>
+          <p>permite calcular con mayor exactitud los materiales</p>
+      </div>
+      <div class="perfiles">
+        <div class="titulo_circulos">
+          <p>Perfiles</p><p>Galvanizados</p>
+        </div>
+          <p>Utilizados para la construcción de <strong>tabiques y</strong></p><p><strong>cielorazos</strong></p>
+      </div>
+      <div class="reduccion">
+        <div class="titulo_circulos">
+          <p >Reducción</p>
+        </div>
+          <p class="txt_reduccion">en los tiempos de obra</p>
+      </div>
+    </div>
+</section>
+<!-- Seccion SERVICIOS -->
+<section id="servicios_menu" class="servicios container-fluid">
+  <h2>NUESTROS SERVICIOS</h2>
+  <div class="servicios_tarjetas d-flex justify-content-around row">
+    <div class="card col-md-3">
+      <img src="./multimedia/perfilarte-venta-y-asesoramiento.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Venta y Asesoramiento técnico a distribuidores.</p>
+      </div>
+    </div>
+    <div class="card col-md-3" >
+      <img src="./multimedia/perfilarte-fabricacion.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Fabricación y comercialización directa.</p>
+      </div>
+    </div>
+    <div class="card col-md-3" >
+      <img src="./multimedia/perfilarte-drywall.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Perfiles Drywall y accesorios. Stock permanente.</p>
+      </div>
+    </div>
+    <div class="card col-md-3 " >
+      <img src="./multimedia/perfilarte-servicio-entrega.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Servicio de entrega. Contamos con flota de vehículos propia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Seccion PRODUCTOS -->
+<section id="productos_menu" class="productos container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h2>PRODUCTOS: PERFILES DRYWALL</h2>
+      <div class="productos_desktop">
+        <div class="img_productos_uno">
+          <img class="col-md-4 col-sm-4" src="./multimedia/Montante_Galeria.png" alt="">
+          <img class="col-md-4 col-sm-4" src="./multimedia/Solera_Galeria.png" alt="">
+          <img class="col-md-4 col-sm-4" src="./multimedia/Buna_Galeria.png" alt="">
+        </div>
+        <div class="img_productos_dos">
+          <img class="col-md-4 col-sm-4" src="./multimedia/Cantonera_Galeria.png" alt="">
+          <img class="col-md-4 col-sm-4" src="./multimedia/Omega_Galeria.png" alt="">
+          <img class="col-md-4 col-sm-4" src="./multimedia//AnguloAjuste_Galeria.png" alt="">
+        </div>
+      </div>
+      <div class="productos_mobile">
+        <div class="img_productos_uno">
+          <img class="col-6" src="./multimedia/Montante_Galeria.png" alt="">
+          <img class="col-6" src="./multimedia/Solera_Galeria.png" alt="">
+        </div>
+        <div class="img_productos_dos">
+          <img class="col-6" src="./multimedia/Buna_Galeria.png" alt="">
+          <img class="col-6" src="./multimedia/Cantonera_Galeria.png" alt="">
+        </div>
+        <div class="img_productos_tres">
+          <img class="col-6" src="./multimedia/Omega_Galeria.png" alt="">
+          <img class="col-6" src="./multimedia//AnguloAjuste_Galeria.png" alt="">
+        </div>
+      </div>
+    </div>
+      <div class="espacio_tabla_desktop col-12">
+        <div class="tabla col-8">
+          <table clas="tabla_desktop col-12">
+            <thead>
+              <tr>
+                <th >Modelo de perfil</th>
+                <th class="cabecera">Espesor (mm)</th>
+                <th class="cabecera">A (mm)</th>
+                <th class="cabecera">B (mm)</th>
+                <th class="cabecera">C (mm)</th>
+                <th class="cabecera">Largo (mm)</th>
+                <th class="cabecera">Peso (KG)</th>
+              </tr>
+            </thead>
+            <tbody class="tabla_body_desktop">
+              <tr>
+                <td>Montante 34</td>
+                <td class="borde_izq" rowspan="5">0,50</td>
+                <td class="borde_izq">34</td>
+                <td class="borde_izq">35</td>
+                <td class="borde_izq">30</td>
+                <td class="borde_izq general_tabla" rowspan="8"><p>2600</p><p>ESTÁNDAR Y <span>CORTES A MEDIDA</span></p></td>
+                <td class="borde_izq">1,113</td>
+              </tr>
+              <tr>
+                <td>Montante 69</td>
+                <td class="borde_izq">69</td>
+                <td class="borde_izq">35</td>
+                <td class="borde_izq">30</td>
+                <td class="borde_izq">1,49</td>
+              </tr>
+              <tr>
+                <td>Solera 35</td>
+                <td class="borde_izq">35</td>
+                <td class="borde_izq">28</td>
+                <td class="borde_izq">-</td>
+                <td class="borde_izq">1,00</td>
+              </tr>
+                <td>Solera 70</td>
+                <td class="borde_izq">70</td>
+                <td class="borde_izq">28</td>
+                <td class="borde_izq">-</td>
+                <td class="borde_izq">1,35</td>
+              </tr>
+              <tr>
+                <td>Omega</td>
+                <td class="borde_izq">10</td>
+                <td class="borde_izq">12,5</td>
+                <td class="borde_izq">30</td>
+                <td class="borde_izq">0,94</td>
+              </tr>
+              <tr>
+                <td>Buña perimetral</td>
+                <td class="borde_izq">0,4</td>
+                <td class="borde_izq">8,5</td>
+                <td class="borde_izq">20</td>
+                <td class="borde_izq">15</td>
+                <td class="borde_izq">0,38</td>
+              </tr>
+              <tr>
+                <td>Cantonera</td>
+                <td class="borde_izq">0</td>
+                <td class="borde_izq">31</td>
+                <td class="borde_izq">31</td>
+                <td class="borde_izq">-</td>
+                <td class="borde_izq">0,5</td>
+              </tr>
+              <tr>
+                <td>Ángulo ajuste</td>
+                <td class="borde_izq">0,36</td>
+                <td class="borde_izq">8,5</td>
+                <td class="borde_izq">24</td>
+                <td class="borde_izq">-</td>
+                <td class="borde_izq">0,36</td>
+              </tr>
+          </tbody>
+          </table>
+        </div>
+        <div class="texto_tabla col-md-4">
+          <h4>PROCESAMOS BOBINAS DE ACERO GALVANIZADOPROVISTAS POR TERNIUM CUMPLIENDO CON LOS MÁS ALTOS NIVELES DE CALIDAD.</h4>
+          <h4>
+            <span>
+              PROVEEMOS AL MERCADO NUESTRA LÍNEA COMPLETA DE PERFILES POR MEDIO DE UNA PROPIA RED DE DISTRIBUCIÓN EVITANDO SOBRE-PRECIOS.
+            </span>
+          </h4>
+        </div>
+      </div>
+      <div class="espacio_tabla_mobile mt-2 pt-4 col-12">
+        <div class="tabla col-12">
+          <table clas="tabla_mobile col-12">
+            <thead>
+              <tr>
+                <th >Modelo de perfil</th>
+                <th class="cabecera">Espesor (mm)</th>
+                <th class="cabecera">A (mm)</th>
+                <th class="cabecera">B (mm)</th>
+                <th class="cabecera">C (mm)</th>
+                <th class="cabecera">Largo (mm)</th>
+                <th class="cabecera">Peso (KG)</th>
+              </tr>
+            </thead>
+            <tbody class="tabla_body_mobile">
+              <tr>
+                <td>Montante 34</td>
+                <td class="borde_izq" rowspan="5">0,50</td>
+                <td class="borde_izq">34</td>
+                <td class="borde_izq">35</td>
+                <td class="borde_izq">30</td>
+                <td class="borde_izq general_tabla" rowspan="8"><p>2600</p><p>ESTÁNDAR Y <span>CORTES A MEDIDA</span></p></td>
+                <td class="borde_izq">1,113</td>
+              </tr>
+              <tr>
+                <td>Montante 69</td>
+                <td class="borde_izq">69</td>
+                <td class="borde_izq">35</td>
+                <td class="borde_izq">30</td>
+                <td class="borde_izq">1,49</td>
+              </tr>
+              <tr>
+                <td>Solera 35</td>
+                <td class="borde_izq">35</td>
+                <td class="borde_izq">28</td>
+                <td class="borde_izq">-</td>
+                <td class="borde_izq">1,00</td>
+              </tr>
+                <td>Solera 70</td>
+                <td class="borde_izq">70</td>
+                <td class="borde_izq">28</td>
+                <td class="borde_izq">-</td>
+                <td class="borde_izq">1,35</td>
+              </tr>
+              <tr>
+                <td>Omega</td>
+                <td class="borde_izq">10</td>
+                <td class="borde_izq">12,5</td>
+                <td class="borde_izq">30</td>
+                <td class="borde_izq">0,94</td>
+              </tr>
+              <tr>
+                <td>Buña perimetral</td>
+                <td class="borde_izq">0,4</td>
+                <td class="borde_izq">8,5</td>
+                <td class="borde_izq">20</td>
+                <td class="borde_izq">15</td>
+                <td class="borde_izq">0,38</td>
+              </tr>
+              <tr>
+                <td>Cantonera</td>
+                <td class="borde_izq">0</td>
+                <td class="borde_izq">31</td>
+                <td class="borde_izq">31</td>
+                <td class="borde_izq">-</td>
+                <td class="borde_izq">0,5</td>
+              </tr>
+              <tr>
+                <td>Ángulo ajuste</td>
+                <td class="borde_izq">0,36</td>
+                <td class="borde_izq">8,5</td>
+                <td class="borde_izq">24</td>
+                <td class="borde_izq">-</td>
+                <td class="borde_izq">0,36</td>
+              </tr>
+          </tbody>
+          </table>
+        </div>
+        <div class="texto_tabla col-sm-12">
+          <h4>PROCESAMOS BOBINAS DE ACERO GALVANIZADOPROVISTAS POR TERNIUM CUMPLIENDO CON LOS MÁS ALTOS NIVELES DE CALIDAD.</h4>
+          <h4>
+            <span>
+              PROVEEMOS AL MERCADO NUESTRA LÍNEA COMPLETA DE PERFILES POR MEDIO DE UNA PROPIA RED DE DISTRIBUCIÓN EVITANDO SOBRE-PRECIOS.
+            </span>
+          </h4>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- Slider Planta -->
+<section class="col-12 pt-5 pb-5" >
+  <div class="titulo_produccion pb-3">
+    <h2 class="mb-4 text-center">PLANTA DE PRODUCCIÓN </h2>
+</div>
+  <div class="row slider_desktop">
+<div class="col-md-1 d-flex justify-content-end align-self-center">
+  <a class="boton_slider" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+</div>
+  <div class="container col-10">
+    <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <img src="./multimedia/Planta1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="./multimedia/Planta2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="./multimedia/Planta3.jpg" class="d-block w-100" alt="...">
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="llamanos">
-            <h3>Llamanos</h3>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <img src="./multimedia/Planta4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="./multimedia/Planta5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="./multimedia/Planta6.jpg" class="d-block w-100" alt="...">
+            </div>
           </div>
-          <div class="tel">
-            <img src="./multimedia/whatsapp.png" alt="" />
-            <h4>+54 9 11.2154.9607</h4>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <img src="./multimedia/Planta7.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="./multimedia/Planta8.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="./multimedia/Planta9.jpg" class="d-block w-100" alt="...">
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
+  </div>
+  <div class="col-md-1 d-flex justify-content-end align-self-center">
+    <a class="boton_slider" href="#carouselExampleIndicators3" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+</div>
+<div class="row slider_mobile">
+<div class="col-2 d-flex justify-content-end align-self-center">
+  <a class="boton_slider" href="#myCarousel" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</a>
+
+</div>
+<div class="carousel-container col-8">
+    <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./multimedia/Planta1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./multimedia/Planta2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./multimedia/Planta3.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./multimedia/Planta4.jpg" alt="Fourth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./multimedia/Planta5.jpg" alt="Fifth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./multimedia/Planta6.jpg" alt="Sixth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./multimedia/Planta7.jpg" alt="Seventh slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./multimedia/Planta8.jpg" alt="Eighth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./multimedia/Planta9.jpg" alt="Ninth slide">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-2 d-flex justify-content-end align-self-center">
+    <a class="boton_slider" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+</div>
+  </section>
+<!-- Contacto -->
+<section id="contacto_menu" class="contacto_footer row">
+    <iframe class="col-lg-8 col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7359.724539375579!2d-58.73618255661693!3d-34.412187260197946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca175c25013db%3A0x29cce84552591b0f!2sPerfilarte!5e0!3m2!1ses-419!2sar!4v1681308800624!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="datos_contacto">
+      <div>
+        <h3>CONTACTO</h3>
+        <p>ventasweb@perfilartesrl.com.ar</p>
+        <p>Cel. 11 2154 9607</p>
+      </div>
+      <div class="redes">
+      <a class="facebook" target="_blank" href="https://www.facebook.com/PerfilArte/"><i class="bi bi-facebook"></i></a>
+      <a class="instagram" target="_blank" href="https://www.instagram.com/_perfilarte_/?hl=es"><i class="bi bi-instagram"></i></a>
+    </div>
+    </div>
+    <form class="col-lg-3 col-12" action="sendmail.php" method="POST">
+      <div class="consulta_contacto col-lg-11 col-md-6 col-12">
+        <a href="https://wa.me/5491121549607 " class="boton_consulta_contacto" target="_blank">
+          <p class="texto_boton_consulta_contacto">CONSULTA POR WHATSAPP</p> 
+          <img class="whats_contacto" src="./multimedia/whatsapp.png" alt="">
+        </a>
+      </div>   
+    <div class="contact-content">
+        <input class="col-lg-11 col-12 nombreyapellido" type="text" name="name" placeholder="Nombre y Apellido" required="required">
+        <input class="col-lg-11 col-12" type="email" name="email" placeholder="E-mail" required="required">
+        <input class="col-lg-11 col-12" type="tel" name="phone" placeholder="Teléfono" required="required">
+        <textarea class="col-lg-11 col-12" name="message" cols="30" rows="7" placeholder="Envienos su consulta" required="required"></textarea>
+        <div class="col-lg-11 col-12 d-flex justify-content-end enviar">
+        <button  type="submit" >
+        ENVIAR
+        </button>
+      </div>
+        </div>
+    </form>
+  
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+
+
+
   </body>
 </html>
